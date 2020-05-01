@@ -1,6 +1,6 @@
-<!-- Checked element of a class worked or not-->
+<!-- Checked CSS at class& multiple ngClass CSS properties worked or not-->
 
-<!--  
+<!--
   <h1 [class.gray]="h1Style">Home</h1>
  -->
 
@@ -8,9 +8,14 @@
 <h1 [ngClass]="{  'gray': h1Style,  'large': !h1Style}">Home</h1>
 -->
 
-<!-- 
-  Inline CSS applied
--->
-<h1 [style.color]="h1Style ? 'gray' : 'black'">Home</h1>
+<!--  Inline CSS & Also ngstyle for  multiple CSS propeties -->
 
+<!--
+  <h1 [style.color]="h1Style ? 'gray' : 'black'">Home</h1>
+-->
+
+<h1 [ngStyle]="{
+  'color': h1Style ? 'gray' : 'black',
+  'font-size': !h1Style ? '1em': '4em'
+}">Home</h1>
 <button (click)="firstClick()"> Click me </button>
