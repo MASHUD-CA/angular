@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.scss'],
 })
 export class NavComponent implements OnInit {
-  // appTitle: string = 'myapp'; //OR
-  appTitle = 'myapp';
+  appTitle: string = 'myapp'; //OR
+  //appTitle = 'myapp';
 
   constructor() {}
 
